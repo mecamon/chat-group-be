@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  chat-web-app:
+    container_name: chat-web-app
+    build: .
+    expose: 
+      - 8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/usr/app/src
